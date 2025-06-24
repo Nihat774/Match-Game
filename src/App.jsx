@@ -41,7 +41,8 @@ function App() {
           )
         );
 
-        Swal.fire({
+        setTimeout(() => {
+          Swal.fire({
           title: "🎉 Təbriklər, qazandınız!",
           confirmButtonText: "Yenidən oyna",
           allowOutsideClick: false,
@@ -51,6 +52,7 @@ function App() {
             startNewGame();
           }
         });
+        }, 500);
       }
 
       setTimeout(() => {
@@ -67,7 +69,7 @@ function App() {
 
   return (
     <main>
-      <h1>🧠 Memory Match Game</h1>
+      <p>🧠 Memory Match Game</p>
 
       <div className="cart">
         {cards.map((card) => (
