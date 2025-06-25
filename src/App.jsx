@@ -67,7 +67,7 @@ function App() {
 
   return (
     <main>
-      <h1>🧠 Memory Match Game</h1>
+      <p>🧠 Memory Match Game</p>
 
       <div className="cart">
         {cards.map((card) => (

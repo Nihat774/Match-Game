@@ -8,31 +8,49 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: aqua;
 }
 img {
   border-radius: 20px;
   height: 30vh;
   width: 12vw;
-  border: 1px solid;
   cursor: pointer;
 }
-.cart{
-    display: grid;
-    grid-template-columns: auto auto auto ;
+.cart {
+  display: grid;
+  grid-template-columns: auto auto auto;
   gap: 15px;
-
 }
 .box {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
-button{
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    background-color: aqua;
-    color: white;
-    border: 0;
-    cursor: pointer;
+button {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: aqua;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .cart {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+  p {
+    padding: 20px 0px;
+  }
+  img {
+    width: 35vw;
+    height: 26vh;
+  }
 }
