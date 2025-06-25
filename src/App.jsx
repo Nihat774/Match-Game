@@ -41,7 +41,8 @@ function App() {
           )
         );
 
-        Swal.fire({
+        setTimeout(() => {
+          Swal.fire({
           title: "🎉 Təbriklər, qazandınız!",
           confirmButtonText: "Yenidən oyna",
           allowOutsideClick: false,
@@ -51,6 +52,7 @@ function App() {
             startNewGame();
           }
         });
+        }, 500);
       }
 
       setTimeout(() => {
