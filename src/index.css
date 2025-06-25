@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  border-radius: 20px;
+  height: 30vh;
+  width: 12vw;
+  border: 1px solid;
+  cursor: pointer;
+}
+.cart{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+  gap: 15px;
+
+}
+.box {
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: aqua;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
